@@ -1,0 +1,842 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<!-- SITE TITLE -->
+		<title>LSP DAQU</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800,800i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,600i,700,800" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/font-awesome.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/fonts/themify-icons.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/fonts/etline.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/owl.carousel.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/owl.theme.default.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/lightbox.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/owl.theme.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/style.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/animate.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/bumber/css/responsive.css') }}" rel="stylesheet">
+		<link rel="stylesheet" href="{{ asset('assets/bumber/css/css.css') }}">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			
+			#myBtn a {
+			  display: block;
+			  position: fixed;
+			  bottom: 20px;
+			  right: 30px;
+			  z-index: 99;
+			  font-size: 18px;
+			  border: none;
+			  outline: none;
+			  background-color:#ff3b3b;
+			  color: white;
+			  cursor: pointer;
+			  padding: 10px;
+			  border-radius: 44px;
+			}
+			
+			#myBtn:hover {
+			  background-color: #555;
+			}
+			.aja
+			{
+			width: 40px;
+			height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- START PRELOADER -->
+			<!-- <div class="preloader">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div> -->
+			</div>
+		<!-- END PRELOADER -->
+		<button id="myBtn"><a href="https://api.whatsapp.com/send?phone=+6287771221197&text=Assalamualaikum...%0A%0ASaya%20berminat%20mengikut%20Uji%20Sertifikasi%20di%20LSP%20Daarul%20Qur%27an%20...."><b>CHAT </b><img src="{{ asset('assets/bumber/images/wa.png') }}" class="aja"  style="width:5px, height:50px"	alt="image chat" class="img-circle"></a> </button>
+		<!-- START NAVBAR -->
+			<div class="navbar navbar-default navbar-fixed-top menu-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img class="img-responsive" src="{{ asset('assets/bumber/images/ds.png') }}">
+							<img class="img-responsive" src="{{ asset('assets/bumber/images/12.png') }}">
+						</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<nav>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#home"><b>Home</b></a></li>
+								<li><a href="#team"><b>Profil</b></a></li>
+								<li><a href="#daqu"><b>Seputar DaQu</b></a></li>
+								<li><a href="#portfolio"><b>Skema Sertifikasi</b></a></li>
+								<li><a href="#daftar"><b>Daftar</b></a></li>	
+                                <li><a href="#contact"><b>Kontak</b></a></li>
+                                <li><a href="{{ route('login') }}"><b>Login</b></a></li>
+							</ul>
+						</nav>
+					</div> 
+				</div><!--- END CONTAINER -->
+			</div> 
+		<!-- END NAVBAR -->	
+		
+		<!-- START HOME -->
+			<section id="home" class="welcome-area">
+				<div class="welcome-slider-area">
+					<div id="welcome-slide-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="single-slide-item" style="background-image: url('{{ asset('assets/bumber/images/slider/5.png') }}'); background-size: cover;">
+									<div class="single-slide-item-table">
+										<div class="single-slide-item-tablecell">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="slider_heading">
+															<h1 class="alt-font title-large font-weight-800 text-white text-uppercase animated fadeInUp" style="animation-delay: 500ms">Selamat datang di <span>LSP DAQU</span></h1>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="background-image: url('{{ asset('assets/bumber/images/slider/4.png') }}'); background-size: cover;">
+								<div class="single-slide-item slide-2">
+									<div class="single-slide-item-table">
+										<div class="single-slide-item-tablecell">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="slider_heading">
+															<h1 class="alt-font title-large font-weight-800 text-extra-dark-gray text-uppercase animated fadeInUp" style="animation-delay: 500ms">LSP DAQU<span> (Lembaga Sertifikasi Profesi)</span></h1>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="background-image: url('{{ asset('assets/bumber/images/slider/6.png') }}'); max-height: 100%; background-size: cover;">
+								<div class="single-slide-item slide-3">
+									<div class="single-slide-item-table">
+										<div class="single-slide-item-tablecell">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="slider_heading">
+															<h1 class="alt-font title-large font-weight-800 text-white text-uppercase animated zoomIn" style="animation-delay: 500ms">lisensi dari Badan Nasional Sertifikasi Profesi <span> (BNSP)</span></h1>
+															
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					 <!-- Controls -->
+					  <a class="left carousel-control" href="#welcome-slide-carousel" role="button" data-slide="prev">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+					  </a>
+					  <a class="right carousel-control" href="#welcome-slide-carousel" role="button" data-slide="next">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					  </a>					
+					</div>
+				</div>
+			</section>
+		<!-- END  HOME DESIGN -->
+		
+		<!-- START FEATURES -->
+			<section id="features">
+				<div class="container">
+					<div class="feature_content_area wow fadeInUp">
+						<div class="row" style="text-align:-webkit-center;">
+							<div class="col-md-4 col-sm-6">
+								<div class="single_feature">
+									<div class="feature_icon">
+										<i class="ti-user"></i>
+									</div>
+									<h4 class="title text-center"> Sumber Daya Manusia Daarul Qur’an</h4>
+								</div>
+							</div> <!-- END COL -->
+							<div class="col-md-4 col-sm-6">
+								<div class="single_feature">
+									<div class="feature_icon">
+										<i class="ti-check-box"></i>
+									</div>
+									<h4 class="title text-center">Seluruh guru al-Qur’an </h4>
+								</div>
+							</div> <!-- END COL -->
+							<div class="col-md-4 col-sm-6">
+								<div class="single_feature">
+									<div class="feature_icon">
+										<i class="ti-shine"></i>
+									</div>
+									<h4 class="title text-center">Seluruh pengelola Lembaga Pendidikan al-Qur’an</h4>
+								</div>
+							</div> <!-- END COL -->
+						</div> <!-- END ROW -->
+					</div>
+				</div>	<!-- END CONTAINER -->
+			</section>
+		<!-- END FEATURES -->
+		
+		<!-- START ABOUT US -->
+			<section id="about_us" class="gray_bg section_padding">
+				<div class="container">			
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+							<div class="about_content">
+								<h3>Assalamualaikum wr wb.</h3>
+								<p  class="text-justify">Bismillahirrahmanirrahim alhamdulillahi rabbil ‘alamin 
+									Washsholatu was-Salamu ‘ala Sayyidina Muhammadin wa ‘ala alihi wa ashhabihi ajma’in wal hamdu lillahi rabbil ‘alamin.</p>
+								<br />
+								<p class="text-justify">Al-Qur’an adalah kitab suci bagi umat Islam, yang memuat petunjuk hidup bagi umat manusia. Sedemikian pentingnya al-Qur’an,
+									 maka ia harus ditransmisikan dari generasi ke generasi secara ketat. Hal itu bukan hanya untuk menjaga orisinalitas kandungan al-Qur’an namun juga untuk menjaga kesahihan cara bacanya. 
+									Pada tahapan ini, posisi guru al-Qur’an menjadi sangat penting.
+								</p>
+							</div>
+						</div> <!-- END COL -->
+						<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight text-center">
+							<div class="about_slider owl-carousel">
+								<div class="about_image">
+									<img src="{{ asset('assets/bumber/images/about/4.png') }}" alt=""/>
+								</div>       
+								<div class="about_slider">
+									<img src="{{ asset('assets/bumber/images/about/5.png') }}" alt=""/>
+								</div>
+								<div class="about_slider">
+									<img src="{{ asset('assets/bumber/images/about/6.png') }}" alt=""/>
+								</div>
+							</div>
+						</div> <!-- END COL -->
+					</div> <!--- END ROW -->
+				</div> <!--- END CONTAINER -->
+			</section>
+		<!-- END ABOUT US -->
+		
+		<!-- START ABOUT US -->
+		<section id="about_us" class="gray_bg section_padding mt-0">
+			<div class="container">			
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeInLeft">
+						<div class="about_content" style="    margin-top: -135px;">
+							<p class="text-justify">
+								Seiring dengan hal itu, maka menjadi urgen upaya menjaga kualifikasi seseorang yang akan mengajarkan al-Qur’an.
+								 Hal ini diharapkan guru atau pengajar al-Qur’an adalah benar-benar seseorang yang memiliki kualifikasi yang memadai untuk  mengajarkan al-Qur’an. 
+								Di sinilah signifikansi keberadaan Lembaga Sertifikasi (LSP) Daarul Qur’an yang secara khusus mengembangkan skema sertifikasi bidang pendidikan al-Qur’an. 
+							</p><br />
+							<p class="text-justify">
+								Website LSP Daarul Qur’an ini, diharapkan menjadi pusat informasi bagi masyarakat luas,
+								 sekaligus menjadi perangkat untuk audiensi antara masyarakat dan pengelola LSP Daarul Qur’an. Harapannya tidak lain semoga terbangun relasi yang pada gilirannya memerkuat dakwah Al-Qur’an di Nusantara dan bahkan dunia. 
+								Akhirnya, saya sampaikan selamat datang di website LSP Daarul Qur’an!. Muhammad Bisyri (Direktur LSP Daarul Qur’an,Tangerang, 20 Agustus 2020)
+							</p>
+						</div>
+					</div> <!-- END COL -->
+				</div> <!--- END ROW -->
+			</div> <!--- END CONTAINER -->
+		</section>
+		<!-- END ABOUT US -->
+
+		
+		<!-- START TEAM -->
+		<section id="team" class="section_padding">
+			<div class="container text-justify">
+				<div class="section_heading wow zoomIn text-center">
+					<h2> <span>Profil</span></h2>
+				</div> <!-- END HEADING -->
+				
+				<p>
+					Lembaga Sertifikasi Profesi Daarul Qur’an selanjutnya disingkat menjadi LSP DAQU. LSP DAQU merupakan Lembaga Sertifikasi Profesi bidang pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an yang berlokasi di: Kawasan Bisnis CBD Ciledug, Blok A5 No. 23 Jl. H.O.S. Cokroaminoto, Kelurahan Karang Tengah Kecamatan Ciledug Kota Tangerang.
+				</p><br>
+				<p>
+					LSP DAQU merupakan lembaga sertifikasi yang didirikan oleh Yayasan Daarul Qur’an Indonesia yang berbadan hukum dengan Notaris Nurwahidah. Z. Isnaini SH. Nomor: 03/2005 dan pada tanggal 20 Januari mengajukan pendirian LSP Daarul Qur’an.
+				</p><br>
+				<p>
+					Tujuan LSP DAQU adalah menyelenggarakan sertifikasi kompetensi di bidang pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an, sesuai ketentuan dan persyaratan profesional bertaraf nasional dan internasional. Untuk mencapai tujuan tersebut, LSP Daarul Qur’an menjalankan usaha dan kegiatan sebagai berikut:
+				</p><br>
+				<p>
+					1. Melakukan standarisasi kompetensi pendidik Al-Qur’anbr	<br>
+					2. Menyelenggarakan sertifikasi kompetensi pendidik Al-Qur’an yang terkait dengan pengakuan keahlian dan profesionalisme di bidang pendidik Al-Qur’an.
+				</p><br>
+				<p>
+					LSP Daarul Qur’an dipercaya oleh masyarakat sebagai lembaga sertifikasi yang bermutu dengan dikelola secara profesional serta didukung fasilitas yang siap memberikan pelayanan prima dalam tatanan organisasi dan sistem manajemen yang siap menghadapi persaingan global. 
+				</p>
+			</div>
+		</section>
+		<!-- END TEAM -->
+		
+		<!-- START ABOUT US -->
+		<section id="about_us" class="section_padding">
+			<div class="container">			
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+						<div class="about_content text-justify">
+							<h3>LSP Daarul Qur’an</h3>
+							<p>
+								<b>
+								Visi:
+							</b>
+							</p><br>
+							<p>
+								Menjadi Lembaga Sertifikasi Profesi (LSP) bidang pendidikan al-Qur’an yang unggul di Indonesia dan dunia.
+							</p><br>
+							<p>
+								<b>
+									Misi:
+								</b>
+							</p><br>
+								
+							<p>
+								1. Mewujudkan pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an yang profesional dan berkualitas sesuai standar kompetensi.
+							</p><br>
+							<p>
+								2. Mencetak pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an tersertifikasi sesuai standar kompetensi.
+							</p><br>
+							<p>
+								3. Mengembangkan skema sertifikasi pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an.
+							</p><br>
+							<p>
+								4. Membangun jejaring pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an yang tersertifikasi di masyarakat internasional.
+							</p><br>
+							<p>
+								5. Mengembangkan kapasitas pendidik al-Qur’an dan pengelola Lembaga Pendidikan al-Qur’an yang tersertifikasi dalam hal manajemen pengelolaan lembaga pendidikan al-Qur’an.
+							</p>
+						</div>
+					</div> <!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight text-center">
+						<div class="about_slider owl-carousel">
+							<div class="about_image">
+								<img src="{{ asset('assets/bumber/images/about/5.png') }}" alt=""/>
+							</div>       
+							<div class="about_slider">
+								<img src="{{ asset('assets/bumber/images/about/6.png') }}" alt=""/>
+							</div>
+							<div class="about_slider">
+								<img src="{{ asset('assets/bumber/images/about/4.png') }}" alt=""/>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+				</div> <!--- END ROW -->
+			</div> <!--- END CONTAINER -->
+		</section>
+		<!-- END ABOUT US -->
+
+		<!-- START ABOUT US -->
+		<section id="about_us" class="section_padding">
+			<div class="container">			
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+						<div class="about_content text-justify">
+							<h3>Kebijakan Mutu</h3>
+							<p>
+								1. Memberikan jaminan kualitas (quality insurance) pemilik sertifikat kompetensi kerja dari LSP Daarul Qur’an yang independen sesuai pedoman BNSP.
+							</p><br>
+							<p>
+								2. Menjadikan LSP Daarul Qur’an yang berkualitas dengan komitmen dan konsisten terhadap moral, ramah, kesopanan, kejujuran dan profesionalisme.
+							</p><br>
+							<p>
+								3. Lembaga Sertifikasi Profesi Daarul Qur’an bertekad menerapkan dan memelihara mutu sesuai dengan pedoman BNSP 201 dan 202 versi 2014.
+							</p><br>
+							<p>
+								4. Seluruh personil LSP Daarul Qur’an berkomitmen untuk menyelenggarakan uji kompetensi bidang al-Qur’an yang mencakup pendidik al-Quran dan pengelola Lembaga Pendidikan al-Qur’an. 
+							</p>
+						</div>
+					</div> <!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+						<div class="about_content">
+							<h3>Sasaran Mutu</h3>
+							<p>
+								1. Sumber Daya Manusia Daarul Qur’an
+							</p><br>
+							<p>
+								2. Seluruh guru al-Qur’an 
+							</p><br>
+							<p>
+								3. Seluruh pengelola Lembaga Pendidikan al-Qur’an
+							</p><br>
+						</div>
+					</div> <!-- END COL -->
+				</div> <!--- END ROW -->
+			</div> <!--- END CONTAINER -->
+		</section>
+		<!-- END ABOUT US -->
+
+		<!-- START ABOUT US -->
+		<section id="daqu" class="gray_bg section_padding">
+			<div class="container">
+				<div class="section_heading wow zoomIn text-center">
+					<h2><span>Seputar Daqu</span></h2>
+				</div>			
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+						<div class="about_content text-justify">
+							<p>Pesantren Tahfizh Daarul Qur’an didirikan oleh Ust. Yusuf Mansur, berlokasi di Kamp. Qur’an, Cipondoh, Tangerang.,  sebuah kawasan yang dibangun oleh PPPA Daarul Qur’an, di lokasi inilah sebagai pusat pengembangan ilmu Qur’an, pelatihan  dan menjadi  sentra Pembibitan Penghafal Al Qur’an.
+
+								Daarul Qur’an adalah Pondok Pesantren yang mengharmonikan pendidikan, lifeskill, sosial, da</p>
+							<br />
+							<p>Melalui pengajaran  One Day dan One Ayat, Hafalan Qur’an adalah standar kualifikasi santri Daarul Qur’an. Untuk menjadikan putra-putri Anda Penghafal Qur’an secara cepat dan tepat,
+
+								Dengan pembimbing yang sudah teruji melalui berbagai ajang Musabaqoh Hifdzil dan Tilawah Qur’an Nasional. Juga tenaga pengajar bertaraf internasional dari berbagai Negara
+							</p>
+							
+							<div class="about_button">
+								<a href="https://daqu.sch.id/" class="btn btn-sm main_btn">Selengkapnya</a>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight text-center">
+						<div class="about_slider owl-carousel">
+							<div class="about_image">
+								<img src="{{ asset('assets/bumber/images/about/1.png') }}" alt=""/>
+							</div>       
+							<div class="about_slider">
+								<img src="{{ asset('assets/bumber/images/about/2.png') }}" alt=""/>
+							</div>
+							<div class="about_slider">
+								<img src="{{ asset('assets/bumber/images/about/3.png') }}" alt=""/>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+				</div> <!--- END ROW -->
+			</div> <!--- END CONTAINER -->
+		</section>
+	<!-- END ABOUT US -->
+		<!-- START TEAM -->
+		<section id="portfolio" class="section_padding">
+			<div class="container">
+				<div class="section_heading wow zoomIn text-center">
+					<h2> <span>Skema Sertifikasi</span></h2>
+				</div> <!-- END HEADING -->
+				
+				<p class="text-justify">
+					Berdasarkan Keputusan Ketua BNSP (Badan Nasional Sertifikasi Profesi) Nomor: Kep. 1283 / BNSP / VII / 2020 tentang Hasil Verifikasi Skema Sertifikasi LSP Daarul Qur’an, LSP Daarul Qur’an menyelenggarakan sertifikasi pada 6 (enam) skema sertifikasi. Enam skema sertifikasi yang dimaksud adalah sebagai berikut:
+				</p><br>
+				<p>
+					1. Guru Tahsin Al-Qur’an Mubtadi (Muda)<br>
+					2. Guru Tahsin Al-Qur’an Mutawassit (Madya)<br>
+					3. Guru Tahsin A-Qur’an Mahir (Ahli)<br>
+					4. Guru Tahfizh Al-Qur’an Mubtadi (Muda)<br>
+					5. Guru Tahfizh Al-Qur’an Mutawassit (Madya)<br>
+					6. Guru Tahfizh A-Qur’an Mahir (Ahli)
+				</p><br>
+				<p class="text-justify">
+					Enam skema tersebut di atas, disusun  guna memenuhi peraturan perundangan  yang menyatakan bahwa setiap tenaga kerja berhak mendapatkan pengakuan kompetensi  yang dimilikinya   yang diperoleh melalui pendidikan, pelatihan dan pengalaman kerja dan pemenuhan peraturan tentang sertifikasi kompetensi SDM sektor pendidikan Al-Qur’an. Selain itu, enam skema tersebut juga disusun dalam rangka memenuhi  kebutuhan tenaga kerja kompeten  di sektor pendidikan Al-Qur’an yang banyak dibutuhkan pada saat ini dan masa yang akan datang. Skema sertifikasi ini diharapkan menjadi acuan pengembangan pendidikan dan pelatihan berbasis kompetensi. Dalam rangka  meningkatkan daya saing tenaga kerja di pasar kerja  regional, nasional dan internasional di sektor pendidikan Al-Qur’an.
+				</p><br>
+				
+			</div>
+		</section>
+		<!-- END TEAM -->
+
+		<!-- START BLOG -->
+		<section id="daftar" class="gray_bg section_padding">
+			<div class="container">
+				<div class="section_heading wow zoomIn text-center">
+					<h2><span>Daftar</span></h2>
+					
+				</div> <!-- END HEADING -->
+				<p class="text-justify">Sebelum Anda mendaftarkan diri menjadi calon asesi, silakan pelajari lebih dahulu skema sertifikasi yang akan Anda pilih. Anda diharapkan lebih dahulu memahami secara tepat perihal persyaratan dan hal-hal lainnya terkait skema sertifkasi yang akan Anda pilih.</p><br>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">							
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">
+								<a href="pdf_1"><h3 class="post-title">1. Guru Tahsin Al-Qur’an Mubtadi (Muda)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU TAHSIN AL-QUR’AN MUBTADI (MUDA)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_1" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">										
+								<a href="pdf_2.html"><h3 class="post-title">2. Guru Tahsin Al-Qur’an Mutawassit (Madya)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU TAHSIN AL-QUR’AN Mutawassit (Madya)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_2.html" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">										
+								<a href="pdf_3.html"><h3 class="post-title">3. Guru Tahsin A-Qur’an Mahir (Ahli)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU TAHSIN AL-QUR’AN Mahir (Ahli)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_3.html" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>	
+					</div>	<!-- END COL -->
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">							
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">
+								<a href="pdf_4.html"><h3 class="post-title">4. Guru Tahfizh Al-Qur’an Mubtadi (Muda)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU Tahfizh AL-QUR’AN MUBTADI (MUDA)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_4.html" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">										
+								<a href="pdf_5.html"><h3 class="post-title">5. Guru Tahfizh Al-Qur’an Mutawassit (Madya)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU Tahfizh AL-QUR’AN Mutawassit (Madya)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_5.html" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- END COL -->
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="post-slide wow fadeInUp">
+							<div class="single_blog">										
+								<a href="pdf_6.html"><h3 class="post-title">6. Guru Tahfizh A-Qur’an Mahir (Ahli)</h3></a>
+								<p class="post-description">
+									SKEMA SERTIFIKASI OKUPASI GURU Tahfizh AL-QUR’AN Mahir (Ahli)
+								</p>
+								<div class="blog_button">
+									<a href="pdf_6.html" class="btn btn-default main_btn">Selengkapnya</a>
+								</div>
+							</div>
+						</div>	
+					</div>	<!-- END COL -->
+				</div>
+				
+			</div>
+		</section>
+	<!-- END BLOG -->
+
+		<!-- START PORTFOLIO -->
+			<section id="#" class="section_padding">
+				<div class="container">
+					<div class="section_heading wow zoomIn text-center">
+						<!-- <h2><span>Foto</span></h2> -->
+					</div> <!-- END HEADING -->
+					
+					<div class="portfolio_filter text-center wow fadeInDown">
+						<ul>
+							<li class="filter wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".25s" data-filter="all">Semua</li>
+							<li class="filter" data-filter=".branding">LSP</li>
+							<li class="filter" data-filter=".web">Lembaga</li>
+							<li class="filter" data-filter=".package">Sertifikasi</li>
+							<li class="filter" data-filter=".video">Lain</li>
+						</ul>
+					</div>
+					
+					<div class="portfolio_item_area text-center">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 mix all branding package">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/2.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="{{ asset('assets/bumber/images/portfolio/2.png') }}" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix all web">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/3.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="{{ asset('assets/bumber/images/portfolio/3.png') }}" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix all package branding">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/4.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="{{ asset('assets/bumber/images/portfolio/4.png') }}" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix all branding package video">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/5.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="{{ asset('assets/bumber/images/portfolio/5.png') }}" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix all branding package">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/6.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="images/portfolio/6.png" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix all branding video">
+								<div class="box">
+									<img src="{{ asset('assets/bumber/images/portfolio/7.png') }}" alt="" />
+									<div class="box-content">
+										<div class="content">
+											<ul class="social">
+												<li><a href="{{ asset('assets/bumber/images/portfolio/7.png') }}" data-lightbox="images"><i class="fa fa-search"></i></a></li>
+											</ul>
+											<h3 class="title">Foto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- END PORTFOLIO -->
+		
+		<!-- START TESTIMONIAL -->
+			<section id="testimonial_area" class="section_padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="testmonial_slider_area text-center owl-carousel">
+								<div class="single_testimonial">	
+									<div class="pic">
+										<img src="{{ asset('assets/bumber/images/testimonial/7.png') }}" alt="">
+									</div>	
+									<h5 class="testimonial-title">KH. Yusuf Mansyur</h5>
+									<!-- <span class="test_designation">Web Developer</span>									
+									<p class="description">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p> -->
+								</div> <!-- END SINGLE TESTIMONIALS -->	
+							
+								<div class="single_testimonial">	
+									<div class="pic">
+										<img src="{{ asset('assets/bumber/images/testimonial/7.png') }}" alt="">
+									</div>	
+									<h5 class="testimonial-title">KH. Ahmad Jameel</h5>
+									<!-- <span class="test_designation">Web Developer</span>									
+									<p class="description">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p> -->
+								</div> <!-- END SINGLE TESTIMONIALS -->	
+							
+								<div class="single_testimonial">	
+									<div class="pic">
+										<img src="{{ asset('assets/bumber/images/testimonial/7.png') }}" alt="">
+									</div>	
+									<h5 class="testimonial-title">Ust. Anwar Sani</h5>
+									<!-- <span class="test_designation">Web Developer</span>									
+									<p class="description">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p> -->
+								</div> <!-- END SINGLE TESTIMONIALS -->
+							
+								<div class="single_testimonial">	
+									<div class="pic">
+										<img src="{{ asset('assets/bumber/images/testimonial/7.png') }}" alt="">
+									</div>	
+									<h5 class="testimonial-title">Ust. Tarmizi Ashidiq</h5>
+									<!-- <span class="test_designation">Web Developer</span>									
+									<p class="description">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p> -->
+								</div> <!-- END SINGLE TESTIMONIALS -->
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- END TESTIMONIAL -->
+		
+		
+		
+		<!-- START CONTACT -->
+			<section id="contact" class="section_padding">
+				<div class="container">
+					<div class="section_heading wow zoomIn text-center">
+						<h2><span>Kontak</span></h2>
+					</div> <!-- END HEADING -->
+					
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="contact_details wow fadeInLeft">
+								<div class="single_contact">
+									<i class="fa fa-map-marker"></i>
+									<h5>Address</h5>
+									<p>Kawasan Bisnis CBD Ciledug, Blok A5 No. 23 Jl. H.O.S. Cokroaminoto, Kelurahan Karang Tengah Kecamatan Ciledug Kota Tangerang.</p>
+								</div>
+								<div class="single_contact">
+									<i class="fa fa-envelope"></i>
+									<h5>Email</h5>
+									<p>lspdaqu@gmail.com</p>
+								</div>
+								<div class="single_contact">
+									<i class="fa fa-phone"></i>
+									<h5>Phone</h5>
+									<a href="https://api.whatsapp.com/send?phone=+6287771221197&text=Assalamualaikum...%0A%0ASaya%20berminat%20mengikut%20Uji%20Sertifikasi%20di%20LSP%20Daarul%20Qur%27an%20...."><p>Admin 1 : +62 87771221197</p></a>
+									<a href="https://api.whatsapp.com/send?phone=+6285782718179&text=Assalamualaikum...%0A%0ASaya%20berminat%20mengikut%20Uji%20Sertifikasi%20di%20LSP%20Daarul%20Qur%27an%20...."><p>Admin 2 : +62 85782718179</p></a>
+									
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="col-md-9 col-sm-8 col-xs-12">
+							<div class="contact wow fadeInRight">
+								<form id="contact-form" method="post" enctype="multipart/form-data">
+									<div class="row">
+										<div class="input_padding text-center">
+											<div class="form-group col-sm-6">
+												<input type="text" name="name" class="form-control" id="first-name" placeholder="Name *" required="required">
+											</div>
+											<div class="form-group col-sm-6">
+												<input type="email" name="email" class="form-control" id="email" placeholder="Email *" required="required">
+											</div>
+											<div class="form-group col-sm-12">
+												<input type="text" name="subject" class="form-control" id="subject" placeholder="Subject *" required="required">
+											</div>
+											<div class="form-group col-sm-12 mab-none">
+												<textarea rows="8" name="message" class="form-control" id="description" placeholder="Your Message Here ..." required="required"></textarea>
+											</div>
+											<div class="form-group col-sm-12">
+												<div class="actions">
+													<button type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-default main_btn" title="Click here to submit your message!">Send Your Message</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div> END COL -->
+					</div>
+				</div>
+			</section>
+		<!-- END CONTACT -->
+		
+		<!-- START FOOTER -->
+			<div class="copyright">
+				<div class="copyright wow zoomIn text-center">
+					<div class="copy_text">
+						<p>Copyright © 2020 LSP DAQU All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		<!-- END FOOTER -->
+		
+		<!-- Latest jQuery -->
+		
+		<script src="{{ asset('assets/bumber/js/jquery-1.12.4.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/modernizr-2.8.3.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/owl.carousel.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/jquery.mixitup.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/lightbox.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/jquery.stellar.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/jquery.inview.min.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/waypoints.min.js') }}"></script>
+		<!-- <script src="js/wow.min.js"></script> -->
+		<script src="{{ asset('assets/bumber/js/scrolltopcontrol.js') }}"></script>
+		<!-- <script src="js/SmoothScroll.js"></script> -->
+		<script src="{{ asset('assets/bumber/js/form-contact.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/jquery.appear.js') }}"></script>
+		<script src="{{ asset('assets/bumber/js/main.js') }}"></script>
+		<script>
+			$('.navbar-collapse a').click(function(){
+				$(".navbar-collapse").collapse('hide');
+			});
+		</script>
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+			
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "block";
+			  }
+			}
+			
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+	</body>
+</html>	
