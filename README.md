@@ -10,3 +10,4 @@ Berikut adalah cara installasi dan penggunaan aplikasi ini.
 -   php artisan db:seed.
 -   Jalankan aplikasi dengan menggunakan 'php artisan serve'.
 # lsp
+# lsp
